@@ -15,7 +15,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Edubest Travel",
-  description: "Helping people and groups choose, plan, and book travel-related services.",
+  description:
+    "Helping people and groups choose, plan, and book travel-related services.",
+  icons: [{ url: "/favicon.ico", href: "/favicon.ico" }],
 };
 
 export default function RootLayout({
