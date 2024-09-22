@@ -145,8 +145,8 @@ const AboutUsPage = () => {
                   photos serve as lasting memories and educational
                   documentation, highlighting the cultural and learning
                   activities. Each student receives a curated collection of
-                  photos, preserving the trip's highlights for both personal
-                  reflection and sharing with family.
+                  photos, preserving the trip&apos;s highlights for both
+                  personal reflection and sharing with family.
                 </p>
               </div>
             </div>

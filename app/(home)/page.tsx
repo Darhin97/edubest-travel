@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Citrus } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import CityCard from "@/components/city-card";
 import { citiesInfo } from "@/data/data-info";

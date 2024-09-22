@@ -1,9 +1,6 @@
 import React from "react";
 import Banner from "@/components/banner";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 
 const Gallery = () => {
   return (

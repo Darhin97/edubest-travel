@@ -1,8 +1,7 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardFooter } from "@/components/ui/card";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { citiesInfo } from "@/data/data-info";
 
 type Props = {
   image: string;
