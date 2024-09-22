@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Edubest Travel",
   description:
     "Helping people and groups choose, plan, and book travel-related services.",
-  icons: [{ url: "/favicon.ico", href: "/favicon.ico" }],
+  icons: [{ url: "/logo.svg", href: "/logo.svg" }],
 };
 
 export default function RootLayout({

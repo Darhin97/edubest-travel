@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 type Props = {
   children?: React.ReactNode;
@@ -6,12 +7,13 @@ type Props = {
 
 const HomePageLayout = ({ children }: Props) => {
   return (
-    <>
+    <div className={"h-full"}>
       <Header />
-      <main style={{ height: "calc(100% - 74px)" }} className={"bg-slate-100"}>
+      <main className={"min-h-[calc(100vh-74px)] bg-slate-100"}>
         {children}
       </main>
-    </>
+      <Footer />
+    </div>
   );
 };
 

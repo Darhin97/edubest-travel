@@ -5,13 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /*--gap:clamp(1em, 4vw, 2.5em)*/
+  --gap:clamp(1em, 4vw, 2em)
 }
 
-html,
-body,
-:root {
-  height: 100%;
-}
+/*html,*/
+/*body,*/
+/*:root {*/
+/*  height: 100%;*/
+/*  position: relative;*/
+/*}*/
 
 .overlay {
   position: absolute;
@@ -90,3 +93,54 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+
+/*custom css*/
+
+.container {
+  margin: 0 auto;
+  max-width: 100em;
+}
+
+.cities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+
+  --columns: 1;
+}
+
+.cities-grid-item {
+  width: calc((100% / var(--columns)) - (var(--gap)*((var(--columns) - 1) / var(--columns))));
+}
+
+
+
+@media screen and (min-width: 640px) {
+  .cities-grid {
+    --columns: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cities-grid {
+    --columns: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cities-grid {
+    --columns: 3;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .cities-grid {
+    --columns: 4;
+  }
+}
+
+
+
+
+
