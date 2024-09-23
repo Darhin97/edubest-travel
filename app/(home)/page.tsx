@@ -71,9 +71,9 @@ export default function Home() {
         }
       >
         <div className={"flex flex-col gap-y-7  items-center"}>
-          <h3 className={"text-blue-500 font-bold text-2xl md:text-4xl"}>
+          <h2 className={"text-blue-500 font-bold text-2xl md:text-4xl"}>
             What We Offer
-          </h3>
+          </h2>
           <div className={"w-full sm:w-3/4 mx-auto"}>
             <p className={"text-center text-base md:text-lg"}>
               Edubest offers enriching UK tours for children aged 10-17,

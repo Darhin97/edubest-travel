@@ -9,9 +9,7 @@ const HomePageLayout = ({ children }: Props) => {
   return (
     <div className={"h-full"}>
       <Header />
-      <main className={"min-h-[calc(100vh-74px)] bg-slate-100"}>
-        {children}
-      </main>
+      <main className={"min-h-[calc(100vh-74px)] bg-white"}>{children}</main>
       <Footer />
     </div>
   );
