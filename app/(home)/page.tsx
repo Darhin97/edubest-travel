@@ -29,7 +29,7 @@ export default function Home() {
             <div className={"overlay"}></div>
           </div>
 
-          <div className={cn(" absolute top-1/3  md:left-20 xl:left-28 z-1")}>
+          <div className={cn(" absolute top-1/3  md:left-16 xl:left-28 z-1")}>
             <div
               className={
                 "flex flex-col gap-y-5 w-full md:w-[400px] lg:w-[600px] px-4"
