@@ -1,4 +1,4 @@
-import { Card, CardFooter } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -12,10 +12,17 @@ type Props = {
 
 const CityCard = ({ image, title, description, href }: Props) => {
   return (
-    <li className={"cities-grid-item list-none"}>
-      <Card className={"cursor-pointer hover:shadow-sm flex flex-col gap-y-4"}>
-        <div className={"w-full h-[290px] block relative"}>
-          <Image src={image} alt={""} className={"object-cover w-full"} fill />
+    <li className={"cities-grid-item list-none group drop-shadow-lg"}>
+      <Card className={" hover:shadow-sm flex flex-col gap-y-4"}>
+        <div className={"w-full h-[290px] block relative overflow-hidden"}>
+          <Image
+            src={image}
+            alt={""}
+            className={
+              "object-cover w-full scale-100 group-hover:scale-105 transition overflow-hidden"
+            }
+            fill
+          />
         </div>
         <div className={"px-2 md:px-6"}>
           <h4 className={"font-medium text-blue-500 capitalize"}>{title}</h4>
@@ -24,11 +31,21 @@ const CityCard = ({ image, title, description, href }: Props) => {
             <span className={"lg:hidden "}>...</span>
           </p>
         </div>
-        <CardFooter>
-          <Link href={href ?? ""} className={"flex items-center text-[#DC6400]"}>
-            Read more <ChevronRight className={"size-4 ml-2 "} />
+        <div className={"p-4 group/link w-1/2 cursor-pointer"}>
+          <Link
+            href={href ?? ""}
+            className={
+              "flex items-center text-[#DC6400] group-hover/link:text-blue-500 "
+            }
+          >
+            Read more
+            <ChevronRight
+              className={
+                "size-4 ml-2 group-hover/link:translate-x-0.5 transition"
+              }
+            />
           </Link>
-        </CardFooter>
+        </div>
       </Card>
     </li>
   );
