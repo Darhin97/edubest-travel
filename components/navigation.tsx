@@ -106,13 +106,15 @@ const Navigation = () => {
         size="sm"
         variant="outline"
         className={cn(
-          "w-ful text-lg xl:text-xl lg:w-auto justify-between font-normal hover:bg-blue-500/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white  transition",
+          "w-ful lg:w-auto justify-between font-normal hover:bg-blue-500/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white  transition",
           `/contact-us` === pathname
             ? "bg-blue-500/10 text-black"
             : "bg-blue-500",
         )}
       >
-        <Link href={"/contact-us"}>Contact us</Link>
+        <Link href={"/contact-us"} className={"text-lg xl:text-xl "}>
+          Contact us
+        </Link>
       </Button>
     </nav>
   );
