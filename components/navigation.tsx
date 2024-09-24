@@ -40,7 +40,7 @@ const Navigation = () => {
 
   const router = useRouter();
   const pathname = usePathname();
-  const isMobile = useMedia("(max-width: 1024px)", false);
+  const isMobile = useMedia("(max-width: 768px)", false);
 
   const onClick = (href: string) => {
     router.push(href);
@@ -106,7 +106,7 @@ const Navigation = () => {
         size="sm"
         variant="outline"
         className={cn(
-          "w-full lg:w-auto justify-between font-normal hover:bg-blue-500/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white  transition",
+          "w-ful text-lg xl:text-xl lg:w-auto justify-between font-normal hover:bg-blue-500/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white  transition",
           `/contact-us` === pathname
             ? "bg-blue-500/10 text-black"
             : "bg-blue-500",

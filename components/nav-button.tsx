@@ -18,7 +18,9 @@ const NavButton = ({ href, label, isActive }: NavButtonProps) => {
         isActive ? "bg-blue-500/10 text-black" : "bg-transparent",
       )}
     >
-      <Link href={href}>{label}</Link>
+      <Link href={href} className={"text-lg xl:text-xl"}>
+        {label}
+      </Link>
     </Button>
   );
 };
