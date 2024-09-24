@@ -1,9 +1,10 @@
 import React from "react";
 import Banner from "@/components/banner";
+import { Transition } from "@/components/transition";
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <Transition>
       <Banner />
 
       <div className="max-w-screen-2xl px-4 lg:px-14 mx-auto flex flex-col items-center gap-y-10 py-20">
@@ -231,7 +232,7 @@ const AboutUsPage = () => {
           </div>
         </section>
       </div>
-    </div>
+    </Transition>
   );
 };
 

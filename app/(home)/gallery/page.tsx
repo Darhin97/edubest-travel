@@ -1,10 +1,11 @@
 import React from "react";
 import Banner from "@/components/banner";
 import Image from "next/image";
+import { Transition } from "@/components/transition";
 
 const Gallery = () => {
   return (
-    <div>
+    <Transition>
       <Banner />
       <section
         data-name={"gallery"}
@@ -82,7 +83,7 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Transition>
   );
 };
 

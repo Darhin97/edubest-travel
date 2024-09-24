@@ -4,10 +4,11 @@ import ContactForm from "@/components/contact-form";
 
 import { FaSquarePhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
+import { Transition } from "@/components/transition";
 
 const ContactUsPage = () => {
   return (
-    <section className={""}>
+    <Transition>
       <Banner />
       <div className={"py-28 max-w-screen-2xl px-4 mx-auto lg:px-14"}>
         <div
@@ -48,7 +49,7 @@ const ContactUsPage = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Transition>
   );
 };
 

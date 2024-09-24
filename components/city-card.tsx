@@ -7,9 +7,10 @@ type Props = {
   image: string;
   title: string;
   description: string;
+  href?: string;
 };
 
-const CityCard = ({ image, title, description }: Props) => {
+const CityCard = ({ image, title, description, href }: Props) => {
   return (
     <li className={"cities-grid-item list-none"}>
       <Card className={"cursor-pointer hover:shadow-sm flex flex-col gap-y-4"}>
@@ -24,7 +25,7 @@ const CityCard = ({ image, title, description }: Props) => {
           </p>
         </div>
         <CardFooter>
-          <Link href={"#"} className={"flex items-center text-[#DC6400]"}>
+          <Link href={href ?? ""} className={"flex items-center text-[#DC6400]"}>
             Read more <ChevronRight className={"size-4 ml-2 "} />
           </Link>
         </CardFooter>
