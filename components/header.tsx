@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       className={
-        "bg-white px-4 w-full py-6 lg:px-14 sticky  top-0 z-30 border-b shadow-sm"
+        "bg-white px-4 w-full py-4 lg:px-14 sticky  top-0 z-30 border-b shadow-sm"
       }
     >
       <div className={"max-w-screen-2xl mx-auto text-black"}>
