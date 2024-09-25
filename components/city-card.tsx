@@ -24,7 +24,7 @@ const CityCard = ({ image, title, description, href }: Props) => {
             fill
           />
         </div>
-        <div className={"px-2 md:px-6"}>
+        <div className={"px-4"}>
           <h4 className={"font-medium text-blue-500 capitalize"}>{title}</h4>
           <p className={"line-clamp-1 text-sm sm:text-base"}>
             {description}

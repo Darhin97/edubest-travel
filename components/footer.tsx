@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Instagram, Mail, PhoneCall, Twitter } from "lucide-react";
 import { TbBrandTiktok } from "react-icons/tb";
 import { usePathname } from "next/navigation";
+import Magnetic from "@/components/magnetic";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -43,20 +43,22 @@ const Footer = () => {
                   "md:w-1/2 lg:w-2/5 space-y-8 flex flex-col items-center justify-center"
                 }
               >
-                <h3 className={"text-2xl  md:text-3xl xl:text-4xl font-medium"}>
+                <h3
+                  className={
+                    "text-2xl  md:text-3xl lg:text-4xl xl:text-5xl font-medium"
+                  }
+                >
                   Are you Intrigued?
                 </h3>
-                <div>
-                  <Button
-                    asChild
-                    size="sm"
-                    variant="outline"
-                    className={cn(
-                      "w-full lg:w-auto justify-between bg-blue-500 font-normal hover:bg-blue-500/80 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white  transition",
-                    )}
-                  >
-                    <Link href={"/contact-us"}>Request a quote</Link>
-                  </Button>
+                <div className={""}>
+                  <Magnetic>
+                    <Button
+                      className={"bg-blue-500 hover:bg-blue-500/80 "}
+                      size={"lg"}
+                    >
+                      <Link href={"/contact-us"}>Request a quote</Link>
+                    </Button>
+                  </Magnetic>
                 </div>
               </div>
             </div>

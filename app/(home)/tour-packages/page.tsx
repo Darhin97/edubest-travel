@@ -1,11 +1,10 @@
 import React from "react";
 import Banner from "@/components/banner";
 import Image from "next/image";
-import { Transition } from "@/components/transition";
 
 const TourPackagesPage = () => {
   return (
-    <Transition>
+    <div>
       <section data-name={"tour-packages"}>
         <Banner />
 
@@ -129,7 +128,7 @@ const TourPackagesPage = () => {
           </div>
         </div>
       </section>
-    </Transition>
+    </div>
   );
 };
 

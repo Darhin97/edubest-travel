@@ -7,13 +7,13 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import CityCard from "@/components/city-card";
 import { citiesInfo } from "@/data/data-info";
-import { Transition } from "@/components/transition";
+import Magnetic from "@/components/magnetic";
 
 const headingFont = localFont({ src: "../fonts/font.woff2" });
 
 export default function Home() {
   return (
-    <Transition>
+    <>
       <div className={"h-full w-full"}>
         <section
           data-name={"cover-image"}
@@ -29,7 +29,7 @@ export default function Home() {
             <div className={"overlay"}></div>
           </div>
 
-          <div className={cn(" absolute top-1/3  md:left-16 xl:left-28 z-1")}>
+          <div className={cn(" absolute top-[40%]  md:left-16 xl:left-28 z-1")}>
             <div
               className={
                 "flex flex-col gap-y-5 w-full md:w-[400px] lg:w-[600px] px-4"
@@ -51,18 +51,20 @@ export default function Home() {
                 Immersive learning experiences through multi-day trips to
                 historical, cultural, or natural sites.
               </p>
-              <Button
-                className={
-                  "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
-                }
-              >
-                <Link
-                  href={"/contact-us"}
-                  className={"flex items-center justify-start"}
+              <Magnetic>
+                <Button
+                  className={
+                    "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
+                  }
                 >
-                  Learn more <ChevronRight className={"size-4 ml-4"} />
-                </Link>
-              </Button>
+                  <Link
+                    href={"/contact-us"}
+                    className={"flex items-center justify-start"}
+                  >
+                    Learn more <ChevronRight className={"size-4 ml-4"} />
+                  </Link>
+                </Button>
+              </Magnetic>
             </div>
           </div>
         </section>
@@ -203,21 +205,23 @@ export default function Home() {
             </div>
           </div>
           <div className={"w-full flex justify-center"}>
-            <Button
-              className={
-                "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
-              }
-            >
-              <Link
-                href={"/gallery"}
-                className={"flex items-center justify-start"}
+            <Magnetic>
+              <Button
+                className={
+                  "w-4/5 sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors h-11 px-20"
+                }
               >
-                View more <ChevronRight className={"size-4 ml-4"} />
-              </Link>
-            </Button>
+                <Link
+                  href={"/gallery"}
+                  className={"flex items-center justify-center"}
+                >
+                  View more <ChevronRight className={"size-4 ml-4"} />
+                </Link>
+              </Button>
+            </Magnetic>
           </div>
         </section>
       </div>
-    </Transition>
+    </>
   );
 }
