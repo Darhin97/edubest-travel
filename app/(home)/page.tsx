@@ -8,6 +8,7 @@ import Link from "next/link";
 import CityCard from "@/components/city-card";
 import { citiesInfo } from "@/data/data-info";
 import Magnetic from "@/components/magnetic";
+import Reveal from "@/components/reveal";
 
 const headingFont = localFont({ src: "../fonts/font.woff2" });
 
@@ -29,42 +30,52 @@ export default function Home() {
             <div className={"overlay"}></div>
           </div>
 
-          <div className={cn(" absolute top-[40%]  md:left-16 xl:left-28 z-1")}>
+          <div
+            className={cn(
+              " absolute top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
+            )}
+          >
             <div
               className={
                 "flex flex-col gap-y-5 w-full md:w-[400px] lg:w-[600px] px-4"
               }
             >
-              <h3
-                className={cn(
-                  "text-3xl sm:text-5xl lg:text-7xl text-white ",
-                  headingFont.className,
-                )}
-              >
-                Educational tours for students
-              </h3>
-              <p
-                className={
-                  "font-normal text-base sm:text-lg text-white w-full md:w-[490px] "
-                }
-              >
-                Immersive learning experiences through multi-day trips to
-                historical, cultural, or natural sites.
-              </p>
-              <Magnetic>
-                <Button
+              <Reveal>
+                <h3
+                  className={cn(
+                    "text-3xl sm:text-5xl lg:text-7xl text-white ",
+                    headingFont.className,
+                  )}
+                >
+                  Educational tours for students
+                </h3>
+              </Reveal>
+              <Reveal>
+                <p
                   className={
-                    "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
+                    "font-normal text-base sm:text-lg text-white w-full md:w-[490px] "
                   }
                 >
-                  <Link
-                    href={"/contact-us"}
-                    className={"flex items-center justify-start"}
+                  Immersive learning experiences through multi-day trips to
+                  historical, cultural, or natural sites.
+                </p>
+              </Reveal>
+              <Reveal>
+                <Magnetic>
+                  <Button
+                    className={
+                      "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
+                    }
                   >
-                    Learn more <ChevronRight className={"size-4 ml-4"} />
-                  </Link>
-                </Button>
-              </Magnetic>
+                    <Link
+                      href={"/contact-us"}
+                      className={"flex items-center justify-start"}
+                    >
+                      Learn more <ChevronRight className={"size-4 ml-4"} />
+                    </Link>
+                  </Button>
+                </Magnetic>
+              </Reveal>
             </div>
           </div>
         </section>
