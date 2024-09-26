@@ -6,7 +6,7 @@ const AboutUsPage = () => {
     <section>
       <Banner />
 
-      <div className="max-w-screen-2xl px-4 lg:px-14 mx-auto flex flex-col items-center gap-y-10 py-20">
+      <div className="max-w-screen-xl px-4 lg:px-14 mx-auto flex flex-col items-center gap-y-10 py-20">
         <section
           data-name={"about-us-section"}
           className={"flex flex-col gap-y-7 "}
