@@ -1,6 +1,9 @@
 "use client";
-
+import { useState } from "react";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -30,6 +33,7 @@ const formSchema = z.object({
 type FormValues = z.input<typeof formSchema>;
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState<boolean>(false);
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,9 +43,31 @@ const ContactForm = () => {
     },
   });
 
-  const handleSubmit = (values: FormValues) => {
+  const handleSubmit = async (values: FormValues) => {
     console.log(values);
-    // form.reset();
+    try {
+      setLoading(true);
+      const sent = await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        {
+          from_name: values.name,
+          from_email: values.email,
+          message: values.message,
+        },
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS! },
+      );
+
+      if (sent.status === 200) {
+        toast.success("Message sent successfully. You will hear from us soon.");
+        form.reset();
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -113,7 +139,11 @@ const ContactForm = () => {
               )}
             />
           </div>
-          <Button type={"submit"} className={"w-full sm:w-3/5 xl:w-1/5"}>
+          <Button
+            disabled={loading}
+            type={"submit"}
+            className={"w-full sm:w-3/5 xl:w-1/5"}
+          >
             Send
           </Button>
         </form>
