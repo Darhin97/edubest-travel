@@ -32,12 +32,12 @@ export default function Home() {
           </div>
           <div
             className={cn(
-              " absolute top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
+              "absolute top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
             )}
           >
             <div
               className={
-                "flex flex-col items-center text-center gap-y-5 w-full  px-4"
+                "flex flex-col items-center text-center gap-y-5 w-full px-4"
               }
             >
               <Reveal>
