@@ -130,7 +130,7 @@ export default function Home() {
                 <Magnetic>
                   <Button
                     className={
-                      "w-full sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
+                      "w-full sm:w-[140px] bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
                     }
                   >
                     <Link
@@ -213,7 +213,7 @@ export default function Home() {
           }
         >
           <div className={"w-full text-center space-y-2"}>
-            <h3 className={"text-blue-500  font-bold text-2xl md:text-4xl"}>
+            <h3 className={"text-blue-500 font-bold text-2xl md:text-4xl"}>
               Gallery
             </h3>
             <p>Memories from our previous tours all around the UK.</p>
