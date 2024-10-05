@@ -1,5 +1,4 @@
 "use client";
-import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -9,16 +8,83 @@ import CityCard from "@/components/city-card";
 import { citiesInfo } from "@/data/data-info";
 import Magnetic from "@/components/magnetic";
 import Reveal from "@/components/reveal";
+import { Be_Vietnam_Pro } from "next/font/google";
 
-const headingFont = localFont({ src: "../fonts/font.woff2" });
+const textFont = Be_Vietnam_Pro({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export default function Home() {
   return (
     <>
       <div className={"h-full w-full"}>
+        {/*mobile view cover*/}
+        <section data-name={"cover-image mobile"} className={"block md:hidden"}>
+          <div className={"w-full h-[500px] relative"}>
+            <Image
+              src={"/mobile-cover.png"}
+              alt={"Header Image"}
+              fill
+              className={"object-cover"}
+            />
+            <div className={"overlay"}></div>
+          </div>
+          <div
+            className={cn(
+              " absolute top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
+            )}
+          >
+            <div
+              className={
+                "flex flex-col items-center text-center gap-y-5 w-full  px-4"
+              }
+            >
+              <Reveal>
+                <h3
+                  className={cn(
+                    "text-4xl  text-white font-extrabold",
+                    textFont.className,
+                  )}
+                  style={{ fontWeight: 800 }}
+                >
+                  Educational tours for students
+                </h3>
+              </Reveal>
+              <Reveal>
+                <p
+                  className={
+                    "font-normal text-base sm:text-lg text-white w-full md:w-[490px] "
+                  }
+                >
+                  Immersive learning experiences through multi-day trips to
+                  historical, cultural, or natural sites.
+                </p>
+              </Reveal>
+              <Reveal>
+                <Magnetic>
+                  <Button
+                    className={
+                      "w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors"
+                    }
+                  >
+                    <Link
+                      href={"/contact-us"}
+                      className={"flex items-center justify-start"}
+                    >
+                      Learn more <ChevronRight className={"size-4 ml-4"} />
+                    </Link>
+                  </Button>
+                </Magnetic>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+
         <section
-          data-name={"cover-image"}
+          data-name={"cover-image large screen"}
           style={{ height: "calc(100vh - 74px)" }}
+          className={"hidden md:block"}
         >
           <div className={"w-full h-full relative"}>
             <Image
@@ -32,19 +98,19 @@ export default function Home() {
 
           <div
             className={cn(
-              " absolute top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
+              " absolute md:top-[35%] lg:top-1/3 md:left-10 xl:left-20 z-1 2xl:left-48",
             )}
           >
             <div
               className={
-                "flex flex-col gap-y-5 w-full md:w-[400px] lg:w-[600px] px-4"
+                "flex flex-col gap-y-5 w-full md:w-[500px] lg:w-[700px] px-4"
               }
             >
               <Reveal>
                 <h3
                   className={cn(
-                    "text-3xl sm:text-5xl lg:text-7xl text-white ",
-                    headingFont.className,
+                    "text-3xl sm:text-5xl lg:text-7xl text-white font-extrabold",
+                    textFont.className,
                   )}
                 >
                   Educational tours for students
@@ -83,7 +149,7 @@ export default function Home() {
         <section
           data-name={"featured-cities"}
           className={
-            "py-28 max-w-screen-2xl px-4 mx-auto flex flex-col gap-y-10 "
+            "py-20 md:py-28 max-w-screen-2xl px-4 mx-auto flex flex-col gap-y-10 "
           }
         >
           <div className={"flex flex-col gap-y-7  items-center"}>
