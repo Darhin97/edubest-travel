@@ -17,9 +17,9 @@ const AboutUsPage = () => {
             </h2>
             <div className={"w-full"}>
               <p className={"text-center text-base "}>
-                Edubest Travels LTD is a UK-based company dedicated to helping
-                busy parents provide their children with enriching travel
-                experiences abroad.
+                Edubest Travels LTD is a UK and Ghana based company dedicated to
+                helping busy parents provide their children with enriching
+                travel experiences abroad.
               </p>{" "}
               <p className={"text-center text-base "}>
                 Locations: Ghana and the UK
@@ -49,28 +49,28 @@ const AboutUsPage = () => {
               </p>
             </div>
           </div>
-          <div className={"flex flex-col gap-y-7  items-center"}>
-            <h3 className={" font-medium text-xl md:text-2xl"}>Core Values</h3>
-            <div className={"w-full space-y-4"}>
-              <p className={"text-center text-base "}>
-                Care: We prioritise the safety, well-being, and comfort of all
-                children in our care. Every trip is designed to ensure a
-                nurturing environment that allows children to thrive as they
-                explore new cultures and experiences.
-              </p>
-              <p className={"text-center text-base "}>
-                Courageous: We encourage children to step out of their comfort
-                zones, embrace new challenges, and build the courage to explore
-                the world beyond their borders.
-              </p>
-              <p className={"text-center text-base "}>
-                Confidence: Through our travel experiences, we help children
-                develop self-assurance and a strong sense of identity, which
-                empowers them to interact confidently with people from various
-                backgrounds.
-              </p>
-            </div>
-          </div>
+          {/*<div className={"flex flex-col gap-y-7  items-center"}>*/}
+          {/*  <h3 className={" font-medium text-xl md:text-2xl"}>Core Values</h3>*/}
+          {/*  <div className={"w-full space-y-4"}>*/}
+          {/*    <p className={"text-center text-base "}>*/}
+          {/*      Care: We prioritise the safety, well-being, and comfort of all*/}
+          {/*      children in our care. Every trip is designed to ensure a*/}
+          {/*      nurturing environment that allows children to thrive as they*/}
+          {/*      explore new cultures and experiences.*/}
+          {/*    </p>*/}
+          {/*    <p className={"text-center text-base "}>*/}
+          {/*      Courageous: We encourage children to step out of their comfort*/}
+          {/*      zones, embrace new challenges, and build the courage to explore*/}
+          {/*      the world beyond their borders.*/}
+          {/*    </p>*/}
+          {/*    <p className={"text-center text-base "}>*/}
+          {/*      Confidence: Through our travel experiences, we help children*/}
+          {/*      develop self-assurance and a strong sense of identity, which*/}
+          {/*      empowers them to interact confidently with people from various*/}
+          {/*      backgrounds.*/}
+          {/*    </p>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           <div className={"flex flex-col gap-y-7  items-center"}>
             <h3 className={" font-medium text-xl md:text-2xl"}>
               Edubest Values
@@ -212,21 +212,6 @@ const AboutUsPage = () => {
               children’s confidence could be overshadowed by cultural humility,
               it is my passion to give children the confidence the yneed to be
               bold, speak up and share their knowledge
-            </p>
-            <p className={"flex flex-col sm:items-center gap-y-2"}>
-              <span className={"inline-block"}>
-                Refer too the note book for the detail website setup.
-              </span>
-              <span className={"inline-block"}>
-                Joey to do photographing to support.
-              </span>
-              <span className={"inline-block"}>
-                Trip in October- in person meeting with parents. If possible.
-                Travel with Kerry
-              </span>
-              <span className={"inline-block"}>
-                Brochure of the visits to be printed for the session
-              </span>
             </p>
           </div>
         </section>
