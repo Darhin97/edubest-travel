@@ -32,7 +32,7 @@ const Gallery = () => {
                 className={"object-cover"}
               />
             </div>
-            <div className={"w-full bg-slate-700/30 absolute bottom-0"}>
+            <div className={"w-full bg-slate-700/55 absolute bottom-0"}>
               <span
                 className={
                   "block w-full text-center text-white text-base md:text-lg"
@@ -51,13 +51,13 @@ const Gallery = () => {
                 className={"object-cover"}
               />
             </div>
-            <div className={"w-full bg-slate-700/30 absolute bottom-0"}>
+            <div className={"w-full bg-slate-700/55 absolute bottom-0"}>
               <span
                 className={
                   "block w-full text-center text-white text-base md:text-lg"
                 }
               >
-                Theme park
+                Art work
               </span>
             </div>
           </div>{" "}
@@ -70,7 +70,7 @@ const Gallery = () => {
                 className={"object-cover"}
               />
             </div>
-            <div className={"w-full bg-slate-700/30 absolute bottom-0"}>
+            <div className={"w-full bg-slate-700/55 absolute bottom-0"}>
               <span
                 className={
                   "block w-full text-center text-white text-base md:text-lg"
