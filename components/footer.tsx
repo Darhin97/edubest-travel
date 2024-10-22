@@ -145,12 +145,17 @@ const Footer = () => {
               >
                 <h5 className={"font-bold"}>Contact Us</h5>
                 <div>
-                  <p>
+                  <p className={"space-y-1"}>
                     <span className={"flex items-center"}>
-                      <PhoneCall className={"size-4 mr-2"} /> +44 4443 44334
+                      <PhoneCall className={"size-4 mr-2"} /> +44 7988096492
                     </span>
                     <span className={"flex items-center"}>
-                      <Mail className={"size-4 mr-2"} /> info@edubest.com
+                      <PhoneCall className={"size-4 mr-2"} />
+                      +233 256024999
+                    </span>
+                    <span className={"flex items-center"}>
+                      <Mail className={"size-4 mr-2"} />{" "}
+                      admin@edubest-travel.co.uk
                     </span>
                   </p>
                   <div className={"flex gap-4 mt-4"}>

@@ -34,11 +34,15 @@ const ContactUsPage = () => {
               >
                 <span className={"flex items-center"}>
                   <FaSquarePhone className={"size-5 mr-2 text-blue-500"} /> +44
-                  4443 44334
+                  7988096492
+                </span>
+                <span className={"flex items-center"}>
+                  <FaSquarePhone className={"size-5 mr-2 text-blue-500"} /> +233
+                  256024999
                 </span>
                 <span className={"flex items-center"}>
                   <IoMailSharp className={"size-5 mr-2 text-blue-500"} />
-                  info@edubest.com
+                  admin@edubest-travel.co.uk
                 </span>
               </div>
             </div>
