@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Mail, PhoneCall } from "lucide-react";
-import { TbBrandTiktok } from "react-icons/tb";
 import { usePathname } from "next/navigation";
 import Magnetic from "@/components/magnetic";
 import { FaWhatsapp } from "react-icons/fa6";
