@@ -158,13 +158,13 @@ export default function Home() {
             </h2>
             <div className={"w-full sm:w-3/4 mx-auto"}>
               <p className={"text-center text-base md:text-lg"}>
-                Edubest offers enriching UK tours for children aged 10-17,
-                exploring landmarks like the British Museum, Oxford, Cambridge,
-                and Edinburgh Castle. Trips combine cultural, historical, and
-                educational experiences, fostering confidence and curiosity.
-                Core values include excellence, equity, and empowerment,
-                providing children with unforgettable journeys beyond their
-                borders.
+                Edubest offers enriching worldwide tours for children aged
+                10-17, exploring landmarks like the British Museum, Oxford,
+                Cambridge, and Edinburgh Castle. Trips combine cultural,
+                historical, and educational experiences, fostering confidence
+                and curiosity. Core values include excellence, equity, and
+                empowerment, providing children with unforgettable journeys
+                beyond their borders.
               </p>
             </div>
           </div>

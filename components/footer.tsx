@@ -90,10 +90,10 @@ const Footer = () => {
                   />
                 </div>
                 <p className={"text-white"}>
-                  Edubest offers enriching world tours for children aged 10-17,
-                  exploring cultural landmarks like the British Museum and
-                  Edinburgh Castle, fostering confidence, curiosity, and growth
-                  through educational experiences.
+                  Edubest offers enriching worldwide tours for children aged
+                  10-17, exploring cultural landmarks like the British Museum
+                  and Edinburgh Castle, fostering confidence, curiosity, and
+                  growth through educational experiences.
                 </p>
               </div>
               <div
