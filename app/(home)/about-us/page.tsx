@@ -210,7 +210,7 @@ const AboutUsPage = () => {
               understanding and knowledge outside of the curriculum building
               their cultural capital. Growing up in Ghana where sometimes
               children’s confidence could be overshadowed by cultural humility,
-              it is my passion to give children the confidence the yneed to be
+              it is my passion to give children the confidence they need to be
               bold, speak up and share their knowledge
             </p>
           </div>

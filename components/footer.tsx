@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Instagram, Mail, PhoneCall, Twitter } from "lucide-react";
+import { Facebook, Instagram, Mail, PhoneCall } from "lucide-react";
 import { TbBrandTiktok } from "react-icons/tb";
 import { usePathname } from "next/navigation";
 import Magnetic from "@/components/magnetic";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -90,7 +91,7 @@ const Footer = () => {
                   />
                 </div>
                 <p className={"text-white"}>
-                  Edubest offers enriching UK tours for children aged 10-17,
+                  Edubest offers enriching world tours for children aged 10-17,
                   exploring cultural landmarks like the British Museum and
                   Edinburgh Castle, fostering confidence, curiosity, and growth
                   through educational experiences.
@@ -160,34 +161,41 @@ const Footer = () => {
                   </p>
                   <div className={"flex gap-4 mt-4"}>
                     <span>
-                      <Link
-                        href={""}
+                      <a
+                        href={
+                          "https://www.instagram.com/edubestholidays/profilecard/?igsh=cmFxMXR4YzdhdGQy"
+                        }
+                        target={"_blank"}
                         className={
                           'cursor-pointer hover:text-yellow-200 transition "'
                         }
                       >
                         <Instagram className={"size-4 "} />
-                      </Link>
+                      </a>
                     </span>
                     <span>
-                      <Link
-                        href={""}
+                      <a
+                        href={
+                          "https://www.facebook.com/share/pusQzxcCUiS4v7Py/"
+                        }
+                        target={"_blank"}
                         className={
                           'cursor-pointer hover:text-yellow-200 transition "'
                         }
                       >
-                        <Twitter className={"size-4"} />
-                      </Link>
+                        <Facebook className={"size-4"} />
+                      </a>
                     </span>
                     <span>
-                      <Link
-                        href={""}
+                      <a
+                        href={"https://wa.me/233542424957"}
+                        target={"_blank"}
                         className={
                           'cursor-pointer hover:text-yellow-200 transition "'
                         }
                       >
-                        <TbBrandTiktok className={"size-4"} />
-                      </Link>
+                        <FaWhatsapp className={"size-4"} />
+                      </a>
                     </span>
                   </div>
                 </div>
