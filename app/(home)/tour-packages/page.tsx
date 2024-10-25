@@ -38,7 +38,7 @@ const TourPackagesPage = () => {
                   <div className={"space-y-1"}>
                     <p className={"text-lg lg:text-xl font-medium"}>Name:</p>
                     <span className={"text-sm lg:text-base"}>
-                      The London Eye, The British Museum, Buckingham Palace
+                      Explore the United Kingdom
                     </span>
                   </div>
                   <div className={"space-y-1"}>
@@ -46,7 +46,7 @@ const TourPackagesPage = () => {
                       Attractions:
                     </p>
                     <span className={"text-sm lg:text-base"}>
-                      Explore the United Kingdom
+                      The London Eye, The British Museum, Buckingham Palace
                     </span>
                   </div>{" "}
                   <div className={"space-y-1"}>
@@ -92,7 +92,7 @@ const TourPackagesPage = () => {
                   <div className={"space-y-1"}>
                     <p className={"text-lg lg:text-xl font-medium"}>Name:</p>
                     <span className={"text-sm lg:text-base"}>
-                      The London Eye, The British Museum, Buckingham Palace
+                      Explore the United Kingdom
                     </span>
                   </div>
                   <div className={"space-y-1"}>
@@ -100,7 +100,7 @@ const TourPackagesPage = () => {
                       Attractions:
                     </p>
                     <span className={"text-sm lg:text-base"}>
-                      Explore the United Kingdom
+                      The London Eye, The British Museum, Buckingham Palace
                     </span>
                   </div>{" "}
                   <div className={"space-y-1"}>
