@@ -71,10 +71,10 @@ const Footer = () => {
         className={" bg-black rounded-t-2xl md:rounded-t-[50px]"}
       >
         <div className={"max-w-screen-2xl px-4 lg:px-14 mx-auto  py-10"}>
-          <div className={"w-full lg:w-[80%] mx-auto"}>
+          <div className={"w-full  container px-6 mx-auto"}>
             <div
               className={
-                "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2.5fr,1fr,1fr] gap-y-6 gap-x-10"
+                "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr,1fr,1.5fr] gap-y-6 gap-x-10"
               }
             >
               <div

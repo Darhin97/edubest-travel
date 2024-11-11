@@ -16,6 +16,7 @@ const textFont = Be_Vietnam_Pro({
 });
 
 export default function Home() {
+  const cities = citiesInfo.slice(0, 8);
   return (
     <>
       <div className={"h-full w-full"}>
@@ -185,7 +186,7 @@ export default function Home() {
             <div className={"flex flex-wrap relative"}>
               <div className={"block w-full relative"}>
                 <ul className={"cities-grid list-none"}>
-                  {citiesInfo.map((city, index) => (
+                  {cities.map((city, index) => (
                     <CityCard
                       key={index}
                       image={city.image}
@@ -204,6 +205,22 @@ export default function Home() {
               recreational experiences that can provide children with a broad
               and enriching perspective on the UK.
             </p>
+          </div>
+          <div className={"w-full flex justify-center"}>
+            <Magnetic>
+              <Button
+                className={
+                  "w-4/5 sm:w-[140px]  bg-[#DC6400] hover:bg-[#DC6400]/70 transition-colors h-11 px-20"
+                }
+              >
+                <Link
+                  href={"/tour-packages"}
+                  className={"flex items-center justify-center"}
+                >
+                  View more <ChevronRight className={"size-4 ml-4"} />
+                </Link>
+              </Button>
+            </Magnetic>
           </div>
         </section>
         <section

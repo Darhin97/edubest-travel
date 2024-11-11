@@ -97,4 +97,68 @@ export const citiesInfo: CitiesInfoProps = [
     description: "Explore Disneyland for a magical immersive experience where",
     href: "/disneyland",
   },
+  {
+    image: "/dc.png",
+    title: "Washington, D.C",
+    description:
+      "The nation's capital offers access to historical sites, including.",
+    href: "/dc",
+  },
+  {
+    image: "/newyork.png",
+    title: "New York City, New York",
+    description:
+      "Iconic for its cultural and historical attractions, students can visit",
+    href: "/new-york",
+  },
+  {
+    image: "/boston.png",
+    title: "Boston, Massachusetts",
+    description:
+      "Known as the Cradle of Liberty, Boston has many historic sites",
+    href: "/boston",
+  },
+  {
+    image: "/phila.png",
+    title: "Philadelphia, Pennsylvania",
+    description: "This city is rich in early American history, with sites like",
+    href: "/philadelphia",
+  },
+  {
+    image: "/chicago.png",
+    title: "Chicago, Illinois",
+    description: "Chicago offers visits to the Museum of Science and Industry",
+    href: "/chicago",
+  },
+  {
+    image: "/san-fran.png",
+    title: "San Francisco, California",
+    description: "Students can learn about tech innovations in nearby Silicon",
+    href: "/san-francisco",
+  },
+  {
+    image: "/orlando.png",
+    title: "Orlando, Florida",
+    description: "Besides the theme parks, which have educational programs on",
+    href: "/orlando",
+  },
+  {
+    image: "/new-orleans.png",
+    title: "New Orleans, Louisiana",
+    description: "Known for its unique blend of cultures, students can explore",
+    href: "/new-orleans",
+  },
+  {
+    image: "/colosseum.png",
+    title: "Colosseum & Roman Forum",
+    description:
+      "Kids can experience ancient Rome by exploring the Colosseum&apos;s",
+    href: "/new-orleans",
+  },
+  {
+    image: "/vatican.png",
+    title: "Vatican City & Museums",
+    description: "The Vatican Museums offer kid-friendly tours, where kids",
+    href: "/orlando",
+  },
 ];

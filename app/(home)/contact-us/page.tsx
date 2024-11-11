@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact-form";
 
 import { FaSquarePhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 const ContactUsPage = () => {
   return (
@@ -29,9 +30,19 @@ const ContactUsPage = () => {
               </div>
               <div
                 className={
-                  " flex flex-col sm:flex-row  gap-y-4 sm:space-x-4 items-center justify-center lg:flex-col lg:gap-y-0 lg:items-start lg:space-x-0"
+                  " flex flex-col sm:flex-row  gap-y-4 sm:space-x-4 items-center justify-center lg:flex-col lg:gap-y-1 lg:items-start lg:space-x-0"
                 }
               >
+                <a
+                  href={"https://whatsapp.com/channel/0029Vak7O6PCcW4lO1cKrC0A"}
+                  target={"_blank"}
+                  className={'cursor-pointer hover:text-blue-500 transition "'}
+                >
+                  <span className={"flex items-center"}>
+                    <FaWhatsappSquare className={"size-5 mr-2 text-blue-500"} />{" "}
+                    Whatsapp Channel
+                  </span>
+                </a>
                 <span className={"flex items-center"}>
                   <FaSquarePhone className={"size-5 mr-2 text-blue-500"} /> +44
                   7988096492
