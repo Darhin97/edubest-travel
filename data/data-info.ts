@@ -161,4 +161,90 @@ export const citiesInfo: CitiesInfoProps = [
     description: "The Vatican Museums offer kid-friendly tours, where kids",
     href: "/orlando",
   },
+  {
+    image: "/c-rome.png",
+    title: "Children&apos;s Museum of Rome",
+    description: "This hands-on museum offers interactive exhibits focused on",
+    href: "/c-rome",
+  },
+  {
+    image: "/pompeii.png",
+    title: "Pompeii and Herculaneum",
+    description:
+      "Kids interested in history will love exploring these preserved",
+    href: "/pompeii",
+  },
+  {
+    image: "/venice.png",
+    title: "Venice Canals",
+    description:
+      "Venice&apos;s canals, bridges, and gondola rides create a magical",
+    href: "/venice",
+  },
+  {
+    image: "/gardaland.png",
+    title: "Gardaland Resort",
+    description:
+      "This is Italy&apos;s largest amusement park, located near Lake Garda",
+    href: "/gardaland",
+  },
+  {
+    image: "/pisa.png",
+    title: "The Leaning Tower of Pisa",
+    description: "Kids will love the quirky angle of the famous Leaning Tower",
+    href: "/pisa",
+  },
+  {
+    image: "/cinecitta.png",
+    title: "Cinecittà World (Rome)",
+    description:
+      "Italy&apos;s movie-themed amusement park has rides, 4D cinema",
+    href: "/cinecitta",
+  },
+  {
+    image: "/da-vinci.png",
+    title: "Leonardo da Vinci Museum",
+    description:
+      "Florence&apos;s Duomo is an impressive sight, and kids can climb its...",
+    href: "/da-vinci",
+  },
+  {
+    image: "/milan.png",
+    title: "Milan Cathedral (Milan)",
+    description:
+      "Milan’s Gothic cathedral offers a rooftop tour where kids can see...",
+    href: "/milan",
+  },
+  {
+    image: "/pinocchio.png",
+    title: "Pinocchio Park (Collodi)",
+    description: "This whimsical theme park celebrates the story of",
+    href: "/pinocchio",
+  },
+  {
+    image: "/etna.png",
+    title: "Mount Etna (Sicily)",
+    description: "One of Europe&apos;s most active volcanoes, Mount Etna is a",
+    href: "/etna",
+  },
+  {
+    image: "/genova.png",
+    title: "Acquario di Genova",
+    description:
+      "Italy&apos;s largest aquarium features marine life from around the",
+    href: "/genova",
+  },
+  {
+    image: "/bologna.png",
+    title: "Piazza Maggiore (Bologna)",
+    description:
+      "Bologna&apos;s historic center offers a mix of history and food that&apos;s",
+    href: "/bologna",
+  },
+  {
+    image: "/como.png",
+    title: "Lake Como",
+    description: "Perfect for nature-loving kids, Lake Como offers boat trips,",
+    href: "/como",
+  },
 ];
