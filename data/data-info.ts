@@ -153,17 +153,17 @@ export const citiesInfo: CitiesInfoProps = [
     title: "Colosseum & Roman Forum",
     description:
       "Kids can experience ancient Rome by exploring the Colosseum&apos;s",
-    href: "/new-orleans",
+    href: "/colosseum",
   },
   {
     image: "/vatican.png",
     title: "Vatican City & Museums",
     description: "The Vatican Museums offer kid-friendly tours, where kids",
-    href: "/orlando",
+    href: "/vatican",
   },
   {
     image: "/c-rome.png",
-    title: "Children&apos;s Museum of Rome",
+    title: "Children's Museum of Rome",
     description: "This hands-on museum offers interactive exhibits focused on",
     href: "/c-rome",
   },
@@ -177,15 +177,14 @@ export const citiesInfo: CitiesInfoProps = [
   {
     image: "/venice.png",
     title: "Venice Canals",
-    description:
-      "Venice&apos;s canals, bridges, and gondola rides create a magical",
+    description: "Venice's canals, bridges, and gondola rides create a magical",
     href: "/venice",
   },
   {
     image: "/gardaland.png",
     title: "Gardaland Resort",
     description:
-      "This is Italy&apos;s largest amusement park, located near Lake Garda",
+      "This is Italy's largest amusement park, located near Lake Garda",
     href: "/gardaland",
   },
   {
@@ -197,15 +196,14 @@ export const citiesInfo: CitiesInfoProps = [
   {
     image: "/cinecitta.png",
     title: "Cinecittà World (Rome)",
-    description:
-      "Italy&apos;s movie-themed amusement park has rides, 4D cinema",
+    description: "Italy's movie-themed amusement park has rides, 4D cinema",
     href: "/cinecitta",
   },
   {
     image: "/da-vinci.png",
     title: "Leonardo da Vinci Museum",
     description:
-      "Florence&apos;s Duomo is an impressive sight, and kids can climb its...",
+      "Florences Duomo is an impressive sight, and kids can climb its...",
     href: "/da-vinci",
   },
   {
@@ -224,21 +222,21 @@ export const citiesInfo: CitiesInfoProps = [
   {
     image: "/etna.png",
     title: "Mount Etna (Sicily)",
-    description: "One of Europe&apos;s most active volcanoes, Mount Etna is a",
+    description: "One of Europe's most active volcanoes, Mount Etna is a",
     href: "/etna",
   },
   {
     image: "/genova.png",
     title: "Acquario di Genova",
     description:
-      "Italy&apos;s largest aquarium features marine life from around the",
+      "Italy's largest aquarium features marine life from around the",
     href: "/genova",
   },
   {
     image: "/bologna.png",
     title: "Piazza Maggiore (Bologna)",
     description:
-      "Bologna&apos;s historic center offers a mix of history and food that&apos;s",
+      "Bologna's historic center offers a mix of history and food that's",
     href: "/bologna",
   },
   {

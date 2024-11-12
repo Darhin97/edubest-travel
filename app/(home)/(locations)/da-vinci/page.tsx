@@ -1,0 +1,40 @@
+import Image from "next/image";
+
+const DaVinciPage = () => {
+  return (
+    <div className={"max-w-screen-2xl px-4 lg:px-14 mx-auto"}>
+      <div className={"py-10"}>
+        <h2
+          className={
+            "text-blue-500 font-bold text-2xl md:text-3xl text-center mb-7"
+          }
+        >
+          The Duomo and Leonardo da Vinci Museum (Florence)
+        </h2>
+        <div
+          className={
+            "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
+          }
+        >
+          <Image
+            src={"/img-vinci.png"}
+            alt={"picture of  The Duomo and Leonardo da Vinci Museum"}
+            className={""}
+            fill
+            objectFit={"contain"}
+          />
+        </div>
+        <div className={"lg:w-4/5  mx-auto mt-4 md:mt-9 flex flex-col gap-y-4"}>
+          <p className={"text-center text-base "}>
+            Florence&apos;s Duomo is an impressive sight, and kids can climb its
+            dome or bell tower for city views. The Leonardo da Vinci Museum has
+            interactive exhibits where children can try out models of da
+            Vinci&apos;s inventions.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DaVinciPage;
