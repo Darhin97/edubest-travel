@@ -154,14 +154,14 @@ export default function Home() {
           }
         >
           <div className={"flex flex-col gap-y-7  items-center"}>
-            <h2 className={"text-blue-500 font-bold text-2xl md:text-4xl"}>
+            <h2 className={"text-blue-500 font-medium text-2xl md:text-4xl"}>
               What We Offer
             </h2>
-            <div className={"w-full sm:w-3/4 mx-auto"}>
+            <div className={"w-full sm:w-3/4  mx-auto"}>
               <p className={"text-center text-base md:text-lg"}>
-                Edubest offers enriching worldwide tours for children aged
-                10-17, exploring landmarks like the British Museum, Oxford,
-                Cambridge, and Edinburgh Castle. Trips combine cultural,
+                Edubest offers enriching World wide tours for children aged
+                10-17, exploring landmarks like Disneyland, the British Museum,
+                Eiffel tower, Cambridge, and many more. Trips combine cultural,
                 historical, and educational experiences, fostering confidence
                 and curiosity. Core values include excellence, equity, and
                 empowerment, providing children with unforgettable journeys
@@ -173,12 +173,11 @@ export default function Home() {
             <h3 className={" font-medium text-2xl md:text-4xl"}>
               Featured Cities
             </h3>
-            <div className={"w-full sm:w-3/4 mx-auto"}>
+            <div className={"w-full sm:w-3/4 lg:w-1/2 mx-auto"}>
               <p className={"text-center text-base md:text-lg"}>
                 These destinations offer a mix of historical, cultural, and
                 recreational experiences that can provide children with a broad
-                and enriching perspective on the UK. can provide children with a
-                broad and enriching perspective on the UK.
+                and enriching perspective on the world.
               </p>
             </div>
           </div>
