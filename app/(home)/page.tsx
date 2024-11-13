@@ -153,7 +153,7 @@ export default function Home() {
             "py-20 md:py-28 max-w-screen-2xl px-4 mx-auto flex flex-col gap-y-10 "
           }
         >
-          <div className={"flex flex-col gap-y-7  items-center"}>
+          <div className={"flex flex-col gap-y-4  items-center"}>
             <h2 className={"text-blue-500 font-medium text-2xl md:text-4xl"}>
               What We Offer
             </h2>
@@ -169,7 +169,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className={"flex flex-col gap-y-7  items-center"}>
+          <div className={"flex flex-col gap-y-4  items-center"}>
             <h3 className={" font-medium text-2xl md:text-3xl"}>
               Featured Cities
             </h3>
