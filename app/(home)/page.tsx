@@ -170,7 +170,7 @@ export default function Home() {
             </div>
           </div>
           <div className={"flex flex-col gap-y-7  items-center"}>
-            <h3 className={" font-medium text-2xl md:text-4xl"}>
+            <h3 className={" font-medium text-2xl md:text-3xl"}>
               Featured Cities
             </h3>
             <div className={"w-full sm:w-3/4 lg:w-1/2 mx-auto"}>
