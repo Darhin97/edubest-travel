@@ -1,0 +1,48 @@
+# To better understand this file read this:
+# https://docs.ionos.space/docs/github-actions-customization/
+
+name: "Deploy Now: Execute Build"
+
+on:
+  workflow_call:
+    inputs:
+      site-url:
+        required: true
+        type: string
+      branch-id:
+        required: true
+        type: string
+
+env:
+  DEPLOYMENT_FOLDER: /
+
+jobs:
+# Please do not rename this job
+  build-project:
+    name: build edubest-travel
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Run script
+        env:
+          NEXT_PUBLIC_EMAILJS: ue9F5qgL-dUtgDnpP
+          NEXT_PUBLIC_SERVICE_ID: service_ei7fy4n
+          NEXT_PUBLIC_TEMPLATE_ID: template_ddjmupa
+        run: npm run build
+
+# Please do not touch the following action
+      - name: Store deployment content
+        uses: ionos-deploy-now/artifact-action@v1
+        with:
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
+          project-id: 0393dd69-18d1-4fbb-9fcb-7e01f772b926
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          config-file: .deploy-now/edubest-travel/config.yaml
+          action: upload
