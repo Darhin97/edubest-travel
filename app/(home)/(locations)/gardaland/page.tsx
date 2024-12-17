@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const GardalandPage = () => {
   return (
@@ -16,8 +16,8 @@ const GardalandPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-gard.png"}
+          <CldImage
+            src={"media/img-gard.png"}
             alt={"picture of Gardaland Resort"}
             className={""}
             fill

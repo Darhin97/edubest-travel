@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import { citiesInfo } from "@/data/data-info";
 import Magnetic from "@/components/magnetic";
 import Reveal from "@/components/reveal";
 import { Be_Vietnam_Pro } from "next/font/google";
+import CldImage from "@/components/cld-image";
 
 const textFont = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -23,8 +24,8 @@ export default function Home() {
         {/*mobile view cover*/}
         <section data-name={"cover-image mobile"} className={"block md:hidden"}>
           <div className={"w-full h-[500px] relative"}>
-            <Image
-              src={"/mobile-cover.png"}
+            <CldImage
+              src={"media/mobile-cover.png"}
               alt={"Header Image"}
               fill
               className={"object-cover"}
@@ -88,8 +89,8 @@ export default function Home() {
           className={"hidden md:block"}
         >
           <div className={"w-full h-full relative"}>
-            <Image
-              src={"/img.png"}
+            <CldImage
+              src={"media/img.png"}
               alt={"Header Image"}
               fill
               className={"object-cover"}
@@ -241,8 +242,8 @@ export default function Home() {
           >
             <div className={"w-full relative"}>
               <div className={"w-full h-56 md:h-64 xl:h-60"}>
-                <Image
-                  src={"/oxford-uni.png"}
+                <CldImage
+                  src={"media/oxford-uni.png"}
                   alt={"Family at oxford university"}
                   fill
                   className={"object-cover"}
@@ -260,8 +261,8 @@ export default function Home() {
             </div>{" "}
             <div className={"w-full relative"}>
               <div className={"w-full h-56 md:h-64 xl:h-60"}>
-                <Image
-                  src={"/theme-park.png"}
+                <CldImage
+                  src={"media/theme-park.png"}
                   alt={""}
                   fill
                   className={"object-cover"}
@@ -279,8 +280,8 @@ export default function Home() {
             </div>{" "}
             <div className={"w-full relative"}>
               <div className={"w-full h-56 md:h-64 xl:h-60"}>
-                <Image
-                  src={"/theme-park2.png"}
+                <CldImage
+                  src={"media/theme-park2.png"}
                   alt={"Visit to theme park"}
                   fill
                   className={"object-cover"}

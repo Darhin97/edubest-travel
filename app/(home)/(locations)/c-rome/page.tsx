@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const CRomePage = () => {
   return (
@@ -16,8 +16,8 @@ const CRomePage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-c-rome.png"}
+          <CldImage
+            src={"media/img-c-rome.png"}
             alt={"picture of Children’s Museum of Rome"}
             className={""}
             fill

@@ -1,9 +1,9 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const Banner = () => {
   return (
     <div className={"w-full relative h-[20vh]"}>
-      <Image src={"/banner.png"} alt={""} fill objectFit={"cover"} />
+      <CldImage src={"media/banner.png"} alt={""} fill objectFit={"cover"} />
     </div>
   );
 };

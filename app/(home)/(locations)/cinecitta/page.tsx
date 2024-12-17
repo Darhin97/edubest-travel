@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const CinecittaPage = () => {
   return (
@@ -16,8 +16,8 @@ const CinecittaPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-cin.png"}
+          <CldImage
+            src={"media/img-cin.png"}
             alt={"picture of Cinecittà World"}
             className={""}
             fill

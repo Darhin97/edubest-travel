@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const VenicePage = () => {
   return (
@@ -16,8 +16,8 @@ const VenicePage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-venice.png"}
+          <CldImage
+            src={"media/img-venice.png"}
             alt={"picture of Venice Canals"}
             className={""}
             fill

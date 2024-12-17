@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const PompeiiPage = () => {
   return (
@@ -16,8 +16,8 @@ const PompeiiPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-pomp.png"}
+          <CldImage
+            src={"media/img-pomp.png"}
             alt={"picture of Pompeii and Herculaneum"}
             className={""}
             fill
@@ -28,8 +28,8 @@ const PompeiiPage = () => {
           <p className={"text-center text-base "}>
             Kids interested in history will love exploring these preserved
             ancient Roman cities destroyed by the eruption of Mount Vesuvius.
-            It&apos;s like stepping back in time to see Roman houses, theaters, and
-            even ancient graffiti.
+            It&apos;s like stepping back in time to see Roman houses, theaters,
+            and even ancient graffiti.
           </p>
         </div>
       </div>

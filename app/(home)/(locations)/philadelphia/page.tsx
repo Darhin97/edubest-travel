@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const PhilPage = () => {
   return (
@@ -16,8 +16,8 @@ const PhilPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-phil.png"}
+          <CldImage
+            src={"media/img-phil.png"}
             alt={"picture of Philadelphia"}
             className={""}
             fill
@@ -26,8 +26,10 @@ const PhilPage = () => {
         </div>
         <div className={"lg:w-4/5  mx-auto mt-4 md:mt-9 flex flex-col gap-y-4"}>
           <p className={"text-center text-base "}>
-            This city is rich in early American history, with sites like Independence Hall (where the Declaration of Independence
-            was signed) and the Liberty Bell. The Franklin Institute offers interactive science exhibits.
+            This city is rich in early American history, with sites like
+            Independence Hall (where the Declaration of Independence was signed)
+            and the Liberty Bell. The Franklin Institute offers interactive
+            science exhibits.
           </p>
         </div>
       </div>

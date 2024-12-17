@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const VaticanPage = () => {
   return (
@@ -16,8 +16,8 @@ const VaticanPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-vatican.png"}
+          <CldImage
+            src={"media/img-vatican.png"}
             alt={"picture of Vatican City and Vatican Museums"}
             className={""}
             fill

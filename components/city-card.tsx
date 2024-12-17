@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 type Props = {
   image: string;
@@ -15,7 +15,7 @@ const CityCard = ({ image, title, description, href }: Props) => {
     <li className={"cities-grid-item list-none group drop-shadow-lg"}>
       <Card className={" hover:shadow-sm flex flex-col gap-y-4"}>
         <div className={"w-full h-[290px] block relative overflow-hidden"}>
-          <Image
+          <CldImage
             src={image}
             alt={""}
             className={

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const ColosseumPage = () => {
   return (
@@ -16,8 +16,8 @@ const ColosseumPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-col.png"}
+          <CldImage
+            src={"media/img-col.png"}
             alt={"picture of  Colosseum and Roman Forum"}
             className={""}
             fill

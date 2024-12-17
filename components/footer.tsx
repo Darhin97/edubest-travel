@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Mail, PhoneCall } from "lucide-react";
@@ -31,8 +32,8 @@ const Footer = () => {
               <div
                 className={"relative hidden md:block md:w-1/2 lg:w-3/5 h-48"}
               >
-                <Image
-                  src={"/phone.png"}
+                <CldImage
+                  src={"media/phone.png"}
                   alt={"Image of a phone"}
                   fill
                   objectFit={"cover"}
@@ -81,13 +82,8 @@ const Footer = () => {
                 data-name={"logo and text"}
                 className={"flex flex-col gap-y-2"}
               >
-                <div className={"relative w-16 h-16"}>
-                  <Image
-                    src={"/white-logo.svg"}
-                    alt={"White logo"}
-                    fill
-                    objectFit={"contain"}
-                  />
+                <div className={"relative w-[70px] h-[70px]"}>
+                  <img src={"/white-logo.svg"} alt={"White logo"} />
                 </div>
                 <p className={"text-white"}>
                   Edubest offers enriching worldwide tours for children aged

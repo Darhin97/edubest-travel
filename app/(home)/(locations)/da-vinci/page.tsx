@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const DaVinciPage = () => {
   return (
@@ -16,8 +16,8 @@ const DaVinciPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-vinci.png"}
+          <CldImage
+            src={"media/img-vinci.png"}
             alt={"picture of  The Duomo and Leonardo da Vinci Museum"}
             className={""}
             fill

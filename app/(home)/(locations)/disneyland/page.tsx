@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const DisneylandPage = () => {
   return (
@@ -16,8 +16,8 @@ const DisneylandPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/disney1.png"}
+          <CldImage
+            src={"media/disney1.png"}
             alt={"picture of disneyland"}
             className={""}
             fill

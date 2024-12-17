@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const BolognaPage = () => {
   return (
@@ -16,8 +16,8 @@ const BolognaPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-bologna.png"}
+          <CldImage
+            src={"media/img-bologna.png"}
             alt={"picture of Piazza Maggiore and the Two Towers"}
             className={""}
             fill

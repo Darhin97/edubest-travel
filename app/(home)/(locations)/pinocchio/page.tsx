@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const PinocchioPage = () => {
   return (
@@ -16,8 +16,8 @@ const PinocchioPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-pino.png"}
+          <CldImage
+            src={"media/img-pino.png"}
             alt={"picture of Pinocchio Park"}
             className={""}
             fill

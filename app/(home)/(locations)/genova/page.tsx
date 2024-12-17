@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const GenovaPage = () => {
   return (
@@ -16,8 +16,8 @@ const GenovaPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-genova.png"}
+          <CldImage
+            src={"media/img-genova.png"}
             alt={"picture of Acquario di Genova"}
             className={""}
             fill

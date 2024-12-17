@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "@/components/banner";
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const Gallery = () => {
   return (
@@ -25,8 +25,8 @@ const Gallery = () => {
         >
           <div className={"w-full relative"}>
             <div className={"w-full h-56 md:h-64 xl:h-60"}>
-              <Image
-                src={"/oxford-uni.png"}
+              <CldImage
+                src={"media/oxford-uni.png"}
                 alt={"Family at oxford university"}
                 fill
                 className={"object-cover"}
@@ -44,8 +44,8 @@ const Gallery = () => {
           </div>{" "}
           <div className={"w-full relative"}>
             <div className={"w-full h-56 md:h-64 xl:h-60"}>
-              <Image
-                src={"/theme-park.png"}
+              <CldImage
+                src={"media/theme-park.png"}
                 alt={""}
                 fill
                 className={"object-cover"}
@@ -63,8 +63,8 @@ const Gallery = () => {
           </div>{" "}
           <div className={"w-full relative"}>
             <div className={"w-full h-56 md:h-64 xl:h-60"}>
-              <Image
-                src={"/theme-park2.png"}
+              <CldImage
+                src={"media/theme-park2.png"}
                 alt={"Visit to theme park"}
                 fill
                 className={"object-cover"}

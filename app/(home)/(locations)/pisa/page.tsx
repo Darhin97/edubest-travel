@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CldImage from "@/components/cld-image";
 
 const PisaPage = () => {
   return (
@@ -16,8 +16,8 @@ const PisaPage = () => {
             "relative w-full lg:w-3/4 h-64 md:h-[450px] lg:h-[450px] lg:mx-auto"
           }
         >
-          <Image
-            src={"/img-pisa.png"}
+          <CldImage
+            src={"media/img-pisa.png"}
             alt={"picture of The Leaning Tower of Pisa"}
             className={""}
             fill
